@@ -1,0 +1,530 @@
+/*
+ * Bootstrap custom theme for the KCL Maxwell Society website
+ *
+ * Color palette
+ * yellow: #ffd42a
+ * red: #ff0066
+ * blue: #0055d4
+ *
+ */
+
+/* FONT */
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_rbah-webfont.eot');
+  src: url('../fonts/linlibertine_rbah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_rbah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_rbah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_rbah-webfont.svg#linux_libertinebold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_rah-webfont.eot');
+  src: url('../fonts/linlibertine_rah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_rah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_rah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_rah-webfont.svg#linux_libertineregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_riah-webfont.eot');
+  src: url('../fonts/linlibertine_riah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_riah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_riah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_riah-webfont.svg#linux_libertineitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_rzah-webfont.eot');
+  src: url('../fonts/linlibertine_rzah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_rzah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_rzah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_rzah-webfont.svg#linux_libertinesemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_rbiah-webfont.eot');
+  src: url('../fonts/linlibertine_rbiah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_rbiah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_rbiah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_rbiah-webfont.svg#linux_libertinebold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../fonts/linlibertine_rziah-webfont.eot');
+  src: url('../fonts/linlibertine_rziah-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/linlibertine_rziah-webfont.woff') format('woff'),
+       url('../fonts/linlibertine_rziah-webfont.ttf') format('truetype'),
+       url('../fonts/linlibertine_rziah-webfont.svg#linux_libertineSBdIt') format('svg');
+  font-weight: 600;
+  font-style: italic;
+
+}
+
+/* END FONT */
+
+body {
+  position:relative; /* Required by the ScrollSpy plugin */
+  margin-top:50px; /* match the 50px height navbar */
+  font-family: "Linux Libertine", "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.333333; /* 24px for 18px size */
+  color: #000;
+}
+
+.container-fluid {
+  max-width: 1170px;
+}
+
+#main-nav {
+  background:white;
+  border-bottom:1px solid #eee;
+}
+
+#main-nav a{
+  color:black;
+  font-weight:bold;
+}
+
+#main-nav .nav a{
+  font-variant: small-caps;
+  transition: background 0.5s;
+}
+
+#main-nav a.navbar-brand {
+  padding-left: 64px ; /* 32 + (50 - 32 )/2 +15 to match the top and bottom margin */
+  background: transparent url('http://placehold.it/32x32') no-repeat 15px center;
+
+}
+
+#main-nav .nav a:hover,
+#main-nav a.navbar-brand:hover {
+  text-decoration:underline;
+}
+
+.jumbotron {
+  background:#ffd42a; /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+
+  padding:64px 0px;
+  margin:65px 15px 15px 15px;
+  border-radius:3px;
+  box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
+}
+
+.jumbotron h1 {
+  margin: 0px 0px 64px 0px;
+  line-height:1.25;
+}
+
+.jumbotron h1 span {
+  margin-left:-5px;
+  padding: 0px 5px;
+  background: rgba(255, 102, 0, 0.33); /* In case broser doesn't support gradients */
+  background: linear-gradient(to bottom , rgba(255, 102, 0, 0.33) 0%, rgba(255, 102, 0, 0.5) 10%, rgba(255, 102, 0, 0.33) 100%);
+
+}
+
+.jumbotron .btn {
+  font-weight:bold;
+  margin-right:12px;
+  margin-top:64px; /* To be removed on sd display */
+}
+
+.jumbotron-social-links a{
+  display:inline-block;
+  height:24px;
+  width:40px;
+  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align:bottom;
+}
+
+.icon-replace span{
+  display:none; /* hide the text, is replaced by an background icon */
+}
+
+.jumbotron .icon-replace {
+  background: transparent url('') center 0px no-repeat;
+}
+
+.jumbotron .icon-replace:hover {
+  background-position: center -200px;
+}
+
+.jumbotron .icon-mail-24 {
+  background-image: url('../media/icons/mail-24.png');
+}
+
+.jumbotron .icon-facebook-24 {
+  background-image: url('../media/icons/facebook-24.png');
+}
+
+.jumbotron .icon-twitter-24 {
+  background-image: url('../media/icons/twitter-24.png');
+}
+
+#logo {
+  display:inline-block;
+  padding:12px;
+  border-radius:7px;
+  background:rgba(255, 255, 255, 0.8);
+  transform: rotate(0.5deg);
+}
+
+#logo img {
+  transform: rotate(-0.5deg);
+}
+
+footer {
+  margin-top:48px;
+  padding: 64px 0px;
+  background:#6c5353;
+}
+
+.section:before {
+  width:50%;
+  border-bottom:1px solid #ccc;
+  display:block;
+  margin: 64px auto 0px auto;
+}
+
+h2 {
+  font-size:36px;
+  padding-top:49px; /* padding instead of margin so that when scrolling there's a
+                     * small margin above. As the smooth-scroll plugin takes into
+                     * account the top margin resulting from the collapse of the
+                     * body (50px, what I want as real offset as it matches the
+                     * navbar height) and first element one (the jumbobox, 65px),
+                     * I leave 15px to the margin-top.
+                     */
+  margin: 15px 0px 24px 0px;
+}
+
+h3 {
+  font-size:24px;
+  line-height:48px;
+  margin: 0px 0px 24px 0px;
+}
+
+.claims .glyphicon {
+  display:block;
+  font-size:128px;
+  text-align:center;
+  margin: 15px 0px;
+  color:#555;
+}
+
+.claims h3 {
+  font-size:30px;
+  text-align: center;
+  margin:0px 0px 15px 0px;
+}
+
+@media (min-width: 768px) {
+
+  .jumbotron h1 {
+    font-size:48px;
+  }
+
+  .jumbotron .btn {
+    margin-top: 0px;
+  }
+
+  .claims {
+    overflow:hidden; /* avoid scrollbars due to the negative margin of .claim-container */
+  }
+
+  .claims-container {
+    display:table;
+    width:auto;
+    border-collapse:separate;
+    border-spacing:30px 0px;
+    margin: 0 -30px; 
+  }
+
+  .claims .col-sm-4 {
+    display:table-cell;
+    float:none; 
+  }
+
+  .claims .glyphicon {
+    float:right;
+    font-size:inherit;
+    margin:0;
+  }
+
+  .claims h3 {
+    text-align:left;
+  }
+}
+
+.claim-1, .claim-2, .claim-3 {
+  background: #f5f5f5;
+  padding:15px;
+  border-radius: 3px;
+  margin:15px 0px;
+}
+
+.committee-member {
+  margin:48px 0px;
+  font-size:125%;
+  text-align: center;
+}
+
+.committee-member img {
+  width:160px;
+}
+.member-name {
+  margin-top:15px;
+}
+
+.member-role {
+  font-variant: small-caps;
+}
+
+.member-social-links {
+  text-align: center;
+}
+.member-social-links .icon-replace {
+  display:inline-block;
+  height:24px;
+  width:40px;
+  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align:bottom;
+}
+
+.member-social-links .icon-replace {
+  background: transparent url('') center 0px no-repeat;
+}
+
+.member-social-links a.icon-replace:hover {
+  background-position: center -200px;
+}
+.member-social-links span.icon-replace {
+  background-position: center -100px;
+}
+
+.member-social-links .icon-mail-18 {
+  background-image: url('../media/icons/mail-18.png');
+}
+
+.member-social-links .icon-facebook-18 {
+  background-image: url('../media/icons/facebook-18.png');
+}
+
+.member-social-links .icon-twitter-18 {
+  background-image: url('../media/icons/twitter-18.png');
+}
+
+
+#upcoming-events-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#upcoming-events-list li {
+  margin:5px 0;
+  border-top:2px solid #ffd42a;
+  background: #f2f2f2;
+  padding:15px 10px;
+  overflow:visible;
+  border-radius:3px;
+}
+
+#upcoming-events-list li:before{
+  content: none;
+}
+
+#upcoming-events-list p {
+  margin-bottom: 10px;
+}
+#upcoming-events-list .event-title {
+  font-size:125%;
+}
+
+#upcoming-events-list .event-date {
+  float: right;
+  width: 65px;
+  background: #ffd42a url('../media/noise-texture.png');  /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
+  color: black;
+  border-radius:3px;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right:5px;
+  margin-top:-27px;
+}
+
+#upcoming-events-list .event-date span {
+    display: block;
+}
+
+#upcoming-events-list .event-date .day {
+  font-size: 27px;
+  margin-bottom: 2px;
+  line-height: 33px;
+}
+
+#upcoming-events-list .event-date .month,
+#upcoming-events-list .event-date .year {
+  font-size: 16px;
+  line-height: 11px;
+}
+
+#twitter-timeline {
+  margin-top:128px;
+  text-align:center;
+}
+
+#joinform {
+  margin: 64px 0px;
+}
+
+
+#joinform .icon-replace {
+  display:inline-block;
+  float:left;
+  vertical-align: top;
+  height:48px;
+  width:56px;
+  margin:0px 20px 24px 0px;
+  background: transparent url('')  center top  no-repeat;
+}
+
+#joinform .icon-replace:hover {
+  background-position: center -200px;
+}
+
+#joinform .icon-mail-48 {
+  background-image: url('../media/icons/mail-48.png');
+  width:72px;
+  margin-left:25px;
+}
+
+#joinform .icon-twitter-48 {
+  background-image: url('../media/icons/twitter-48.png');
+}
+
+#joinform .icon-facebook-48 {
+  background-image: url('../media/icons/facebook-48.png');
+}
+
+#joinform input {
+  display: block;
+  float:left;
+  font-size: 18px;
+  padding: 0px 12px 3px 12px;
+  height:48px;
+  margin:0px 0px 24px 0px;
+}
+
+#joinform .mail {
+  background: #ffd42a;
+  border:1px solid #ff0066;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#joinform .mail:hover {
+  background: #fce94f;
+}
+
+.mail[placeholder] {
+  color:black;
+  opacity:1;
+}
+
+#joinform .send {
+  background: #ff0066;
+  color:white;
+  font-weight:bold;
+  border:1px solid #ff0066;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left:0;
+}
+
+#joinform .send:hover {
+  background: #e4005b;
+}
+a {
+  color: #ff0066;
+}
+
+a:hover, a:active, a:focus {
+  color: #e4005b; /* 10% darker */
+}
+
+.btn-primary {
+  background: #ff0066;
+  border-color: #ff0066;
+}
+
+.btn-primary:hover,  .btn-primary:active, .btn-primary:focus {
+  background: #e4005b; /* 10% darker */
+  border-color: #e4005b;
+}
+
+.btn-primary:active{
+  position:relative;
+  top:1px;  /* Simulate pressed status */
+}
+
+
+.main-content ul {
+  list-style: none;
+}
+
+.main-content ul li:before {
+    content: "\25A0";
+    font-size: 125%;
+    line-height: 80%; /* smaller to keep the original line-height*/
+    color: #ffd42a;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+    text-shadow: #f57900 -0.2px 0.2px 0.5px;
+}
+
+.main-content li p {
+  margin-bottom:24px;
+}
+
+.img-circle {
+  padding:5px;
+  background:#ffd42a url('../media/noise-texture.png');
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
+}
+
+::selection {
+  background: #ffd42a;
+}
+
+::-moz-selection {
+  background: #ffd42a;
+}

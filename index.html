@@ -4,10 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>KCL Maxwell Society</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom theme -->
+    <link href="css/KclMaxwellSoc-theme.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44923126-2', 'auto');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,12 +31,237 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-offset="100" data-target=".navbar-collapse">
+
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home" id="home">KCL Maxwell Society</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#joinus">Join Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="aboutus" class="jumbotron">
+      <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-sm-8"><span>We are the King's College London Physics Society</span></h1>
+            <div class="col-sm-4 text-center">
+              <span id="logo" >
+                <img class="img-responsive center-block" src="http://placehold.it/200x200" alt="" />
+              </span>
+            </div>
+        </div><!-- /.row -->
+        <a class="btn btn-primary btn-lg" href="#joinus">Join Us</a>
+        <span class="jumbotron-social-links">
+          <a href="mailto:" class="icon-replace icon-mail-24"><span>user@mail.com</span></a>
+          <a href="https://www.facebook.com/MaxwellSociety" class="icon-replace icon-facebook-24"><span>facebook/MaxwellSociety</span></a>
+          <a href="https://twitter.com/MaxwellSociety" class="icon-replace icon-twitter-24"><span>@MaxwellSociety</span></a>
+        </span>
+      </div><!-- /.container-fluid -->
+    </div><!-- /.jumbotron -->
+
+    <div class="container-fluid claims">
+      <div class="claims-container">
+        <div class="col-sm-4 claim-1">
+            <h3><span class="glyphicon glyphicon-question-sign"></span>Who are we?</h3>
+            <p>
+              The Maxwell Society is a department society run by the students and
+              staff for scientific and social purposes. Discover the current <a href="#committee">committee</a>.
+            </p>
+        </div>
+        <div class="col-sm-4 claim-2">
+            <h3><span class="glyphicon glyphicon-info-sign"></span>What do we do?</h3>
+            <p>
+              We hold a weekly lecture series with physisists from around the country
+              and host a wide variety of social <a href="#events">events</a> which will aim to make the
+              most of our time in London.
+            </p>
+        </div>
+        <div class="col-sm-4 claim-3">
+            <h3><span class="glyphicon glyphicon-user"></span>How to join?</h3>
+            <p>
+              All Physics students are entitled to be members of the Society, and
+              pay an annual membership fee of £5. <a href="#joinus">Join now</a>!
+            </p>
+        </div>
+      </div>
+    </div><!-- /.container-fluid claims -->
+
+    <div class="container-fluid main-content">
+
+      <div class="row section">
+        <div class="col-sm-8">
+          <h2 id="events">Events</h2>
+          <p>The main Maxwell Society events are:</p>
+
+          <ul>
+            <li>The Monday Seminar Series: Seminars on a range of science topics
+                are given by speakers invited from other institutions and also from 
+                the King’s Physics Department.
+            </li>
+
+            <li>The Cumberland Lodge Weekend: This residential weekend takes place
+                near the end of February and is organised around a theme. The theme
+                for 2012 was be The History of Physics at King’s.
+            </li>
+
+            <li>Social Events: A number of events are planned every year. There is
+                typically a start of year party, an end of year party such as a boat
+                trip and much in between. Suggestions for events are welcome.
+            </li>
+          </ul>
+        <h3>Upcoming Events</h3>
+
+        <ul id="upcoming-events-list">
+
+          <li>
+            <p>
+              <span class="event-date"><span class="month">SEP</span> <span class="day">24</span> <span class="year">2014</span></span>
+              <span class="event-title">Get ready for next year.</span>
+            </p>
+            <p>event descriptions</p>
+          </li>
+
+          <li>
+            <p>
+              <span class="event-date"><span class="month">SEP</span> <span class="day">24</span> <span class="year">2014</span></span>
+              <span class="event-title">Get ready for next year.</span>
+            </p>
+            <p>event descriptions</p>
+          </li>
+
+        </ul>
+
+        </div>
+          <div class="col-sm-4" id="twitter-timeline"> 
+                       <a class="twitter-timeline"  width="" height="400" data-chrome="noscrollbar" href="https://twitter.com/MaxwellSociety"  data-widget-id="492065862803677184">Tweets by @MaxwellSociety</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-sm-8">
+          <h2 id="committee">Committee</h2>
+          <p>The Maxwell Society Committee consists of a president, secretary, treasurer
+            and several committee members, all chosen from the student body. Elections
+            are held at the end of the academic year.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://a2.files.biography.com/image/upload/c_fill,g_face,h_300,q_80,w_300/MTIwNjA4NjMzNDA3NTcxNDY4.jpg" alt="" />
+          <p class="member-name">Neil Armstrong</p>
+          <p><span class="member-role">President</span></p>
+        <p class="member-social-links">
+          <a href="mailto:" class="icon-replace icon-mail-18"><span>user@mail.com</span></a>
+          <a href="" class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></a>
+          <span class="icon-replace icon-twitter-18"><span></span></span>
+        </p>
+        </div>
+
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://img3.wikia.nocookie.net/__cb20120919125030/bigbangtheory/images/c/c8/Slide04-buzz-aldrin.jpg" alt="" />
+          <p class="member-name">Buzz Aldrin</p>
+          <p><span class="member-role">Secretary</span></p>
+        <p class="member-social-links">
+          <a href="mailto:" class="icon-replace icon-mail-18"><span>user@mail.com</span></a>
+          <span class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></span>
+          <a href="" class="icon-replace icon-twitter-18"><span></span></a>
+        </p>
+        </div>
+
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://lh5.ggpht.com/_0uhBPQkjTFM/TYu3v3nOUyI/AAAAAAAANoA/Vm4Shxtbv3c/Michael%20Collins_thumb%5B4%5D.jpg?imgmax=800" alt="" />
+          <p class="member-name">Michael Collins</p>
+          <p><span class="member-role">Tresurer</span></p>
+          <p class="member-social-links">
+            <span class="icon-replace icon-mail-18"><span>user@mail.com</span></span>
+            <span class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></span>
+            <a href="" class="icon-replace icon-twitter-18"><span></span></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
+          <p class="member-name">Charles Conrad</p>
+          <p><span class="member-role">Member</span></p>
+          <p class="member-social-links">
+            <span class="icon-replace icon-mail-18"><span></span></span>
+            <span class="icon-replace icon-facebook-18"><span></span></span>
+            <span class="icon-replace icon-twitter-18"><span></span></span>
+          </p>
+        </div>
+
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
+          <p class="member-name">Richard Gordon</p>
+          <p><span class="member-role">Member</span></p>
+          <p class="member-social-links">
+            <span class="icon-replace icon-mail-18"><span></span></span>
+            <span class="icon-replace icon-facebook-18"><span></span></span>
+            <span class="icon-replace icon-twitter-18"><span></span></span>
+          </p>
+        </div>
+
+        <div class="col-sm-4 committee-member">
+          <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
+          <p class="member-name">Alan Bean</p>
+          <p><span class="member-role">Member</span></p>
+          <p class="member-social-links">
+            <span class="icon-replace icon-mail-18"><span></span></span>
+            <span class="icon-replace icon-facebook-18"><span></span></span>
+            <span class="icon-replace icon-twitter-18"><span></span></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-sm-8">
+          <h2 id="joinus">Join us</h2>
+          <p>Insert your mail to join us or get in touch ...</p>
+          <form id="joinform">
+            <input type="text" placeholder="your mail" class="mail" />
+            <input type="submit" value="Join Us" class="send" />
+            <a href="" class="icon-replace icon-mail-48"><span>info@mail.domain.tld</span></a>
+            <a href="" class="icon-replace icon-facebook-48"><span></span></a>
+            <a href="" class="icon-replace icon-twitter-48"><span></span></a>
+          </form>
+
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+
+    <footer>
+      <div class="container-fluid">
+      </div><!-- /.container-fluid -->
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
