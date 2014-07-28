@@ -1,0 +1,13 @@
+/*
+ * Bootstrap custom theme for the KCL Maxwell Society website
+ *
+ * Color palette
+ * yellow: #ffd42a
+ * red: #ff0066
+ * blue: #0055d4
+ *
+ */
+
+body {
+  margin-top:50px; /* match the 50px height navbar */
+}
