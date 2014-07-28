@@ -39,3 +39,51 @@ body {
   margin:0;
   padding-bottom:48px;
 }
+
+@media (min-width: 768px) {
+
+  .claims {
+    overflow:hidden; /* avoid scrollbars due to the negative margin of .claim-container */
+  }
+
+  .claims-container {
+    display:table;
+    width:auto;
+    border-collapse:separate;
+    border-spacing:30px 0px;
+    margin: 0 -30px; 
+  }
+
+  .claims .col-sm-4 {
+    display:table-cell;
+    float:none; 
+  }
+}
+
+.claims h3 {
+  font-size:30px;
+  margin:0px 0px 15px 0px;
+}
+
+.claim-1, .claim-2, .claim-3 {
+  background: #f2f2f2;
+  padding:15px;
+  border-top:2px solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin:5px 0px;
+}
+
+.claim-1 {
+  border-color: #ff0066;
+}
+
+
+.claim-2 {
+  border-color: #0055d4;
+}
+
+
+.claim-3 {
+  border-color:#ffd42a;
+}
