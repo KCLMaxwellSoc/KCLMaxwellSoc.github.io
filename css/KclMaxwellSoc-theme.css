@@ -11,3 +11,31 @@
 body {
   margin-top:50px; /* match the 50px height navbar */
 }
+
+#main-nav {
+  background:white;
+  border-bottom:2px solid #ff0066;
+}
+
+#main-nav a{
+  font-weight:bold;
+}
+
+#main-nav .nav a{
+  color: #333;
+}
+
+#main-nav .nav a:hover{
+  background:#eee;
+}
+
+.jumbotron {
+  background:#ffd42a;
+  padding:64px 0px;
+}
+
+.jumbotron h1 {
+  font-size:50px;
+  margin:0;
+  padding-bottom:48px;
+}
