@@ -91,6 +91,10 @@ body {
   color: #000;
 }
 
+.container-fluid {
+  max-width: 1170px;
+}
+
 #main-nav {
   background:white;
   border-bottom:2px solid #ff0066;
