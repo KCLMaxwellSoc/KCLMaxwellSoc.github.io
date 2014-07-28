@@ -15,7 +15,8 @@ smoothScroll.init({
 $(function() {
     $('.nav a, #home').on('click', function(){
         if($('.navbar-toggle').css('display') !='none'){
-            $(".navbar-toggle").trigger( "click" );
+            setTimeout(function () { $(".navbar-toggle").trigger( "click" ) },
+                250);
         }
     });
 });
