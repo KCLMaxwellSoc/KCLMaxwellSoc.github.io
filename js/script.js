@@ -14,7 +14,7 @@ smoothScroll.init({
  */
 $(function() {
     $('.nav a, #home').on('click', function(){
-        if($('.navbar-toggle').css('display') !='none'){
+        if($('.navbar-toggle').css('display') !='none' &&  $('#bs-example-navbar-collapse-1').hasClass('in') ) {
             setTimeout(function () { $(".navbar-toggle").trigger( "click" ) },
                 250);
         }
