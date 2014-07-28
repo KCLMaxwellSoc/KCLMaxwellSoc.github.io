@@ -40,6 +40,12 @@ body {
   padding-bottom:48px;
 }
 
+footer {
+  margin-top:48px;
+  padding: 64px 0px;
+  background:#6c5353;
+}
+
 @media (min-width: 768px) {
 
   .claims {
