@@ -84,6 +84,7 @@
 /* END FONT */
 
 body {
+  position:relative; /* Required by the ScrollSpy plugin */
   margin-top:50px; /* match the 50px height navbar */
   font-family: "Linux Libertine", "Times New Roman", Times, serif;
   font-size: 18px;
