@@ -13,7 +13,7 @@ smoothScroll.init({
  * http://stackoverflow.com/questions/16680543/hide-twitter-bootstrap-nav-collapse-on-click
  */
 $(function() {
-    $('.nav a').on('click', function(){ 
+    $('.nav a, #home').on('click', function(){
         if($('.navbar-toggle').css('display') !='none'){
             $(".navbar-toggle").trigger( "click" );
         }
