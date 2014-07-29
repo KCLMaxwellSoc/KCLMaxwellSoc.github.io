@@ -108,6 +108,7 @@ body {
 
 #main-nav .nav a{
   font-variant: small-caps;
+  transition: background 0.5s;
 }
 
 #main-nav .nav a:hover{
