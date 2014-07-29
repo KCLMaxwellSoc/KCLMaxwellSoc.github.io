@@ -178,3 +178,20 @@ footer {
 .claim-3 {
   border-color:#ffd42a;
 }
+
+.btn-primary {
+  background: #ff0066;
+  border-color: #ff0066;
+}
+
+.btn-primary:hover,  .btn-primary:active, .btn-primary:focus {
+  background: #e4005b; /* 10% darker */
+  border-color: #e4005b;
+  outline:none !important; /* !importan is required at least in firefox to prevent the dotted
+                              outline to appear while mouse is down. Focus is correctlu deactivated */
+}
+
+.btn-primary:active{
+  position:relative;
+  top:1px;  /* Simulate pressed status */
+}
