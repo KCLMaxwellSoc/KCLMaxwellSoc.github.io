@@ -156,6 +156,11 @@ footer {
   margin:0px 0px 15px 0px;
 }
 
+.claims .glyphicon {
+  color:#333;
+  float:right;
+}
+
 .claim-1, .claim-2, .claim-3 {
   background: #f2f2f2;
   padding:15px;
