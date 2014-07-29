@@ -9,7 +9,6 @@ $(function() {
     $('a[href^=#]').attr('data-scroll', '');
 
     smoothScroll.init({
-            offset:50
     });
 
 });
