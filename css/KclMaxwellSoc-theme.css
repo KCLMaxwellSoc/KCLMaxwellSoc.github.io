@@ -184,6 +184,14 @@ footer {
   margin:15px 0px;
 }
 
+a {
+  color: #ff0066;
+}
+
+a:hover, a:active, a:focus {
+  color: #e4005b; /* 10% darker */
+}
+
 .btn-primary {
   background: #ff0066;
   border-color: #ff0066;
