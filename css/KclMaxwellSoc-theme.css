@@ -178,7 +178,7 @@ footer {
 .claim-1, .claim-2, .claim-3 {
   background: #f2f2f2;
   padding:15px;
-  border-top:2px solid;
+  border-top:2px solid black;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin:15px 0px;
