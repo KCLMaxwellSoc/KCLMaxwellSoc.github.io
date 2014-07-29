@@ -131,6 +131,20 @@ footer {
   background:#6c5353;
 }
 
+.claims .glyphicon {
+  display:block;
+  font-size:150px;
+  text-align:center;
+  margin: 15px 0px;
+  color:#333;
+}
+
+.claims h3 {
+  font-size:30px;
+  text-align: center;
+  margin:0px 0px 15px 0px;
+}
+
 @media (min-width: 768px) {
 
   .claims {
@@ -149,16 +163,16 @@ footer {
     display:table-cell;
     float:none; 
   }
-}
 
-.claims h3 {
-  font-size:30px;
-  margin:0px 0px 15px 0px;
-}
+  .claims .glyphicon {
+    float:right;
+    font-size:inherit;
+    margin:0;
+  }
 
-.claims .glyphicon {
-  color:#333;
-  float:right;
+  .claims h3 {
+    text-align:left;
+  }
 }
 
 .claim-1, .claim-2, .claim-3 {
@@ -167,21 +181,7 @@ footer {
   border-top:2px solid;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  margin:5px 0px;
-}
-
-.claim-1 {
-  border-color: #ff0066;
-}
-
-
-.claim-2 {
-  border-color: #0055d4;
-}
-
-
-.claim-3 {
-  border-color:#ffd42a;
+  margin:15px 0px;
 }
 
 .btn-primary {
