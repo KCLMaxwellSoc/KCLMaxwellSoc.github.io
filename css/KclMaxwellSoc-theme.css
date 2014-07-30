@@ -135,6 +135,20 @@ footer {
   background:#6c5353;
 }
 
+.section:before {
+  content: '...';
+  text-align:center;
+  font-size:48px;
+  display:block;
+  margin: 32px 0px 0px 0px;
+}
+
+h2 {
+  font-size:200%;
+  padding-top:48px;
+  margin-bottom:20px;
+}
+
 .claims .glyphicon {
   display:block;
   font-size:150px;
