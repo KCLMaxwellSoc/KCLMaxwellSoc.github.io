@@ -127,6 +127,39 @@ body {
 
 .jumbotron .btn {
   font-weight:bold;
+  margin-right:12px;
+}
+
+.jumbotron-social-links a{
+  display:inline-block;
+  height:24px;
+  width:40px;
+  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align:bottom;
+}
+
+.icon-replace span{
+  display:none; /* hide the text, is replaced by an background icon */
+}
+
+.jumbotron .icon-replace {
+  background: transparent url('') center 0px no-repeat;
+}
+
+.jumbotron .icon-replace:hover {
+  background-position: center -200px;
+}
+
+.jumbotron .icon-mail-24 {
+  background-image: url('../media/icons/mail-24.png');
+}
+
+.jumbotron .icon-facebook-24 {
+  background-image: url('../media/icons/facebook-24.png');
+}
+
+.jumbotron .icon-twitter-24 {
+  background-image: url('../media/icons/twitter-24.png');
 }
 
 footer {
