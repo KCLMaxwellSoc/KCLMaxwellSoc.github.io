@@ -267,6 +267,57 @@ h3 {
   margin:15px 0px;
 }
 
+.committee-member {
+  margin:48px 0px;
+  font-size:125%;
+  text-align: center;
+}
+
+.committee-member img {
+  width:160px;
+}
+.member-name {
+  margin-top:15px;
+}
+
+.member-role {
+  font-variant: small-caps;
+}
+
+.member-social-links {
+  text-align: center;
+}
+.member-social-links .icon-replace {
+  display:inline-block;
+  height:24px;
+  width:40px;
+  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align:bottom;
+}
+
+.member-social-links .icon-replace {
+  background: transparent url('') center 0px no-repeat;
+}
+
+.member-social-links a.icon-replace:hover {
+  background-position: center -200px;
+}
+.member-social-links span.icon-replace {
+  background-position: center -100px;
+}
+
+.member-social-links .icon-mail-18 {
+  background-image: url('../media/icons/mail-18.png');
+}
+
+.member-social-links .icon-facebook-18 {
+  background-image: url('../media/icons/facebook-18.png');
+}
+
+.member-social-links .icon-twitter-18 {
+  background-image: url('../media/icons/twitter-18.png');
+}
+
 a {
   color: #ff0066;
 }
