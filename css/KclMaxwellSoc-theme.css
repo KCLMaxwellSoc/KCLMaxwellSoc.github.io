@@ -111,8 +111,9 @@ body {
   transition: background 0.5s;
 }
 
-#main-nav .nav a:hover{
-  background:#eee;
+#main-nav .nav a:hover,
+#main-nav a.navbar-brand:hover {
+  text-decoration:underline;
 }
 
 .jumbotron {
@@ -255,8 +256,6 @@ a:hover, a:active, a:focus {
 .btn-primary:hover,  .btn-primary:active, .btn-primary:focus {
   background: #e4005b; /* 10% darker */
   border-color: #e4005b;
-  outline:none !important; /* !importan is required at least in firefox to prevent the dotted
-                              outline to appear while mouse is down. Focus is correctlu deactivated */
 }
 
 .btn-primary:active{
