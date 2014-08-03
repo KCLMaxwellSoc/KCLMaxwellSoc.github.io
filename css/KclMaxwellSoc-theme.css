@@ -172,11 +172,10 @@ footer {
 }
 
 .section:before {
-  content: '...';
-  text-align:center;
-  font-size:48px;
+  width:50%;
+  border-bottom:1px solid #ccc;
   display:block;
-  margin: 32px 0px 0px 0px;
+  margin: 64px auto 0px auto;
 }
 
 h2 {
