@@ -318,6 +318,33 @@ h3 {
   background-image: url('../media/icons/twitter-18.png');
 }
 
+
+#upcoming-events-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#upcoming-events-list li {
+  margin:5px 0;
+  border-left:2px solid black;
+  background: #f2f2f2;
+  padding:15px 10px;
+}
+
+#upcoming-events-list .event-title {
+  font-size:125%;
+}
+
+#upcoming-events-list .event-date {
+  font-weight:bold;
+  float:right;
+}
+
+#upcoming-events-list .event-date .day{
+  font-size:125%;
+}
+
 a {
   color: #ff0066;
 }
@@ -339,4 +366,13 @@ a:hover, a:active, a:focus {
 .btn-primary:active{
   position:relative;
   top:1px;  /* Simulate pressed status */
+}
+
+.section ul {
+  margin-top:1em;
+  list-style-type: square;
+}
+
+.section li {
+  margin-bottom:1em;
 }
