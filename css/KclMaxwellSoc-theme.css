@@ -119,6 +119,8 @@ body {
 .jumbotron {
   background:#ffd42a;
   padding:64px 0px;
+  margin:65px 15px 36px 15px;
+  border-radius:3px;
 }
 
 .jumbotron h1 {
