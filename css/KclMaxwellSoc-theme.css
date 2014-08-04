@@ -112,7 +112,7 @@ body {
 }
 
 #main-nav a.navbar-brand {
-  padding-left: 64px ; /* 32 + (50 - 32 )/2 +15 to math the top and bottom margin */
+  padding-left: 64px ; /* 32 + (50 - 32 )/2 +15 to match the top and bottom margin */
   background: transparent url('http://placehold.it/32x32') no-repeat 15px center;
 
 }
@@ -125,18 +125,18 @@ body {
 .jumbotron {
   background:#ffd42a;
   padding:64px 0px;
-  margin:65px 15px 36px 15px;
+  margin:65px 15px 15px 15px;
   border-radius:3px;
 }
 
 .jumbotron h1 {
-  margin:0;
-  padding-bottom:48px;
+  margin: 0px 0px 64px 0px;
 }
 
 .jumbotron .btn {
   font-weight:bold;
   margin-right:12px;
+  margin-top:64px; /* To be removed on sd display */
 }
 
 .jumbotron-social-links a{
@@ -185,9 +185,15 @@ footer {
 }
 
 h2 {
-  font-size:200%;
-  padding-top:48px;
-  margin-bottom:20px;
+  font-size:36px;
+  padding-top:49px; /* padding instead of margin so that when scrolling there's a
+                     * small margin above. As the smooth-scroll plugin takes into
+                     * account the top margin resulting from the collapse of the
+                     * body (50px, what I want as real offset as it matches the
+                     * navbar height) and first element one (the jumbobox, 65px),
+                     * I leave 15px to the margin-top.
+                     */
+  margin: 15px 0px 1em 0px;
 }
 
 .claims .glyphicon {
@@ -207,7 +213,11 @@ h2 {
 @media (min-width: 768px) {
 
   .jumbotron h1 {
-    font-size:50px;
+    font-size:48px;
+  }
+
+  .jumbotron .btn {
+    margin-top: 0px;
   }
 
   .claims {
