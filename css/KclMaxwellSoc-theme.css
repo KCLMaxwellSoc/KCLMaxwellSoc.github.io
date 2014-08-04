@@ -111,6 +111,12 @@ body {
   transition: background 0.5s;
 }
 
+#main-nav a.navbar-brand {
+  padding-left: 64px ; /* 32 + (50 - 32 )/2 +15 to math the top and bottom margin */
+  background: transparent url('http://placehold.it/32x32') no-repeat 15px center;
+
+}
+
 #main-nav .nav a:hover,
 #main-nav a.navbar-brand:hover {
   text-decoration:underline;
