@@ -123,10 +123,13 @@ body {
 }
 
 .jumbotron {
-  background:#ffd42a;
+  background:#ffd42a; /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+
   padding:64px 0px;
   margin:65px 15px 15px 15px;
   border-radius:3px;
+  box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
 }
 
 .jumbotron h1 {
@@ -137,7 +140,9 @@ body {
 .jumbotron h1 span {
   margin-left:-5px;
   padding: 0px 5px;
-  background: rgba(255, 102, 0, 0.33);
+  background: rgba(255, 102, 0, 0.33); /* In case broser doesn't support gradients */
+  background: linear-gradient(to bottom , rgba(255, 102, 0, 0.33) 0%, rgba(255, 102, 0, 0.5) 10%, rgba(255, 102, 0, 0.33) 100%);
+
 }
 
 .jumbotron .btn {
