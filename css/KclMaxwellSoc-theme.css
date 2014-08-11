@@ -345,6 +345,77 @@ h3 {
   font-size:125%;
 }
 
+#joinform {
+  margin: 64px 0px;
+}
+
+
+#joinform .icon-replace {
+  display:inline-block;
+  float:left;
+  vertical-align: top;
+  height:48px;
+  width:56px;
+  margin:0px 20px 24px 0px;
+  background: transparent url('')  center top  no-repeat;
+}
+
+#joinform .icon-replace:hover {
+  background-position: center -200px;
+}
+
+#joinform .icon-mail-48 {
+  background-image: url('../media/icons/mail-48.png');
+  width:72px;
+  margin-left:25px;
+}
+
+#joinform .icon-twitter-48 {
+  background-image: url('../media/icons/twitter-48.png');
+}
+
+#joinform .icon-facebook-48 {
+  background-image: url('../media/icons/facebook-48.png');
+}
+
+#joinform input {
+  display: block;
+  float:left;
+  font-size: 18px;
+  padding: 0px 12px 3px 12px;
+  height:48px;
+  margin:0px 0px 24px 0px;
+}
+
+#joinform .mail {
+  background: #ffd42a;
+  border:1px solid #ff0066;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#joinform .mail:hover {
+  background: #fce94f;
+}
+
+.mail[placeholder] {
+  color:black;
+  opacity:1;
+}
+
+#joinform .send {
+  background: #ff0066;
+  color:white;
+  font-weight:bold;
+  border:1px solid #ff0066;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left:0;
+}
+
+#joinform .send:hover {
+  background: #e4005b;
+}
 a {
   color: #ff0066;
 }
