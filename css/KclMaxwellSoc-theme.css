@@ -448,6 +448,11 @@ h3 {
   line-height: 11px;
 }
 
+#twitter-timeline {
+  margin-top:128px;
+  text-align:center;
+}
+
 #joinform {
   margin: 64px 0px;
 }
