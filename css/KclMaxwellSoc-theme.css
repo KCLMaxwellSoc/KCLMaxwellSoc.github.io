@@ -331,6 +331,7 @@ h3 {
   border-left:2px solid black;
   background: #f2f2f2;
   padding:15px 10px;
+  overflow:hidden;
 }
 
 #upcoming-events-list p {
@@ -341,12 +342,32 @@ h3 {
 }
 
 #upcoming-events-list .event-date {
-  font-weight:bold;
-  float:right;
+  float: right;
+  width: 65px;
+  background-color: #ffd42a;
+  color: black;
+  border-radius:3px;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right:5px;
 }
 
-#upcoming-events-list .event-date .day{
-  font-size:125%;
+#upcoming-events-list .event-date span {
+    display: block;
+}
+
+#upcoming-events-list .event-date .day {
+  font-size: 27px;
+  margin-bottom: 2px;
+  line-height: 33px;
+}
+
+#upcoming-events-list .event-date .month,
+#upcoming-events-list .event-date .year {
+  font-size: 16px;
+  line-height: 11px;
 }
 
 #joinform {
