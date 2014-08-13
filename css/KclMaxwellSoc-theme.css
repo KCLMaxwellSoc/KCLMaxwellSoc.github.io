@@ -325,7 +325,7 @@ h3 {
 }
 
 #upcoming-events-list li {
-  margin:25px 0;
+  margin:5px 0;
   border-top:2px solid #ee2d24;
   background: #f2f2f2;
   padding:15px 10px;
@@ -356,7 +356,7 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   margin-right:5px;
-  margin-top:-25px;
+  margin-top:-27px;
 }
 
 #upcoming-events-list .event-date span {
