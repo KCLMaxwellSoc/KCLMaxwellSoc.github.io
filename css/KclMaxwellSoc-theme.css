@@ -472,3 +472,8 @@ a:hover, a:active, a:focus {
 .main-content li p {
   margin-bottom:24px;
 }
+
+.img-circle {
+  padding:5px;
+  background:#ffd42a;
+}
