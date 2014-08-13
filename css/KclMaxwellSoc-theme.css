@@ -196,6 +196,11 @@ h2 {
   margin: 15px 0px 1em 0px;
 }
 
+h3 {
+  font-size:24px;
+  margin: 24px 0px;
+}
+
 .claims .glyphicon {
   display:block;
   font-size:128px;
