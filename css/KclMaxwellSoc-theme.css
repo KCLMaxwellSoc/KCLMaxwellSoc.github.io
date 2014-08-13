@@ -349,7 +349,9 @@ h3 {
 #upcoming-events-list .event-date {
   float: right;
   width: 65px;
-  background-color: #ffd42a;
+  background: #ffd42a url('../media/noise-texture.png');  /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
   color: black;
   border-radius:3px;
   padding: 8px 0;
@@ -480,5 +482,7 @@ a:hover, a:active, a:focus {
 
 .img-circle {
   padding:5px;
-  background:#ffd42a;
+  background:#ffd42a url('../media/noise-texture.png');
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
 }
