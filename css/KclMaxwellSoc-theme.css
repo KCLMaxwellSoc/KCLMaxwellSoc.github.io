@@ -88,7 +88,7 @@ body {
   margin-top:50px; /* match the 50px height navbar */
   font-family: "Linux Libertine", "Times New Roman", Times, serif;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 1.333333; /* 24px for 18px size */
   color: #000;
 }
 
@@ -200,12 +200,13 @@ h2 {
                      * navbar height) and first element one (the jumbobox, 65px),
                      * I leave 15px to the margin-top.
                      */
-  margin: 15px 0px 1em 0px;
+  margin: 15px 0px 24px 0px;
 }
 
 h3 {
   font-size:24px;
-  margin: 24px 0px;
+  line-height:48px;
+  margin: 0px 0px 24px 0px;
 }
 
 .claims .glyphicon {
@@ -332,6 +333,9 @@ h3 {
   padding:15px 10px;
 }
 
+#upcoming-events-list p {
+  margin-bottom: 10px;
+}
 #upcoming-events-list .event-title {
   font-size:125%;
 }
@@ -439,11 +443,10 @@ a:hover, a:active, a:focus {
   top:1px;  /* Simulate pressed status */
 }
 
-.section ul {
-  margin-top:1em;
+.main-content ul {
   list-style-type: square;
 }
 
-.section li {
-  margin-bottom:1em;
+.main-content li p {
+  margin-bottom:24px;
 }
