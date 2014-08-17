@@ -502,3 +502,11 @@ a:hover, a:active, a:focus {
   background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
 }
+
+::selection {
+  background: #ffd42a;
+}
+
+::-moz-selection {
+  background: #ffd42a;
+}
