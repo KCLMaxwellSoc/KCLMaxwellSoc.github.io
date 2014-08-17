@@ -339,6 +339,10 @@ h3 {
   overflow:visible;
 }
 
+#upcoming-events-list li:before{
+  content: none;
+}
+
 #upcoming-events-list p {
   margin-bottom: 10px;
 }
@@ -472,8 +476,20 @@ a:hover, a:active, a:focus {
   top:1px;  /* Simulate pressed status */
 }
 
+
 .main-content ul {
-  list-style-type: square;
+  list-style: none;
+}
+
+.main-content ul li:before {
+    content: "\25A0";
+    font-size: 125%;
+    line-height: 80%; /* smaller to keep the original line-height*/
+    color: #ffd42a;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+    text-shadow: #f57900 -0.2px 0.2px 0.5px;
 }
 
 .main-content li p {
