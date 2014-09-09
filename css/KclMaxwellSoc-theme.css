@@ -158,10 +158,12 @@ body {
 
 .jumbotron .icon-replace {
   background: transparent url('') center 0px no-repeat;
+  opacity:1;
+  transition: opacity 0.5s;
 }
 
 .jumbotron .icon-replace:hover {
-  background-position: center -200px;
+  opacity:0.8;
 }
 
 .jumbotron .icon-mail-24 {
@@ -303,11 +305,14 @@ h3 {
 
 .member-social-links .icon-replace {
   background: transparent url('') center 0px no-repeat;
+  opacity:1;
+  transition: opacity 0.5s;
 }
 
 .member-social-links a.icon-replace:hover {
-  background-position: center -200px;
+  opacity:0.8;
 }
+
 .member-social-links span.icon-replace {
   background-position: center -100px;
 }
@@ -395,10 +400,12 @@ h3 {
   width:56px;
   margin:0px 20px 24px 0px;
   background: transparent url('')  center top  no-repeat;
+  opacity: 1.0;
+  transition: opacity 0.5s;
 }
 
 #joinform .icon-replace:hover {
-  background-position: center -200px;
+  opacity: 0.8;
 }
 
 #joinform .icon-mail-48 {
