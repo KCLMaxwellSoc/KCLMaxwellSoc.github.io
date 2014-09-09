@@ -132,6 +132,7 @@ body {
   margin:65px 15px 15px 15px;
   border-radius:3px;
   box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
+  text-align: center; /* To be overwritten on sd display */
 }
 
 .jumbotron h1 {
@@ -146,6 +147,7 @@ body {
   margin-top:64px; /* To be removed on sd display */
   border-radius: 4px;
   padding-right:12px;
+  text-align:left;
 }
 
 .jumbotron .btn {
@@ -246,6 +248,10 @@ h3 {
 }
 
 @media (min-width: 768px) {
+
+  .jumbotron {
+    text-align:left;
+  }
 
   .jumbotron h1 {
     font-size:48px;
