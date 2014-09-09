@@ -2,13 +2,14 @@
  * Bootstrap custom theme for the KCL Maxwell Society website
  *
  * Color palette
- * yellow: #ffd42a
+ * King's red: #ee2d24
+ * King's red darker: #d12b29
  * red: #ff0066
- * blue: #0055d4
  *
  */
 
 /* FONT */
+
 @font-face {
   font-family: 'Linux Libertine';
   src: url('../fonts/linlibertine_rbah-webfont.eot');
@@ -123,40 +124,49 @@ body {
 }
 
 .jumbotron {
-  background:#ffd42a; /* In case broser doesn't understand multiple backgrounds */
-  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  color:white;
+  background:#ee2d24; /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #d12b29 0%, #ee2d24 100%);
 
   padding:64px 0px;
   margin:65px 15px 15px 15px;
   border-radius:3px;
   box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
+  text-align: center; /* To be overwritten on sd display */
 }
 
 .jumbotron h1 {
   margin: 0px 0px 64px 0px;
-  line-height:1.25;
 }
 
-.jumbotron h1 span {
-  margin-left:-5px;
-  padding: 0px 5px;
-  background: rgba(255, 102, 0, 0.33); /* In case broser doesn't support gradients */
-  background: linear-gradient(to bottom , rgba(255, 102, 0, 0.33) 0%, rgba(255, 102, 0, 0.5) 10%, rgba(255, 102, 0, 0.33) 100%);
-
+#jumbotron-icons-box {
+  display:inline-block;
+  background: white;
+  background: rgba(255, 255, 255, 0.3);
+  border:2px solid white;
+  margin-top:64px; /* To be removed on sd display */
+  border-radius: 4px;
+  padding-right:12px;
+  text-align:left;
 }
 
 .jumbotron .btn {
   font-weight:bold;
-  margin-right:12px;
-  margin-top:64px; /* To be removed on sd display */
+  margin:-2px 12px -2px -2px;
+  border:2px solid white;
+  border-radius: 4px;
+}
+
+.jumbotron .btn:hover {
+  border:2px solid white;
 }
 
 .jumbotron-social-links a{
   display:inline-block;
   height:24px;
   width:40px;
-  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
-  vertical-align:bottom;
+  margin:6px 0px 6px 12px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align: middle;
 }
 
 .icon-replace span{
@@ -165,10 +175,12 @@ body {
 
 .jumbotron .icon-replace {
   background: transparent url('') center 0px no-repeat;
+  opacity:1;
+  transition: opacity 0.5s;
 }
 
 .jumbotron .icon-replace:hover {
-  background-position: center -200px;
+  opacity:0.8;
 }
 
 .jumbotron .icon-mail-24 {
@@ -184,15 +196,10 @@ body {
 }
 
 #logo {
-  display:inline-block;
-  padding:12px;
-  border-radius:7px;
-  background:rgba(255, 255, 255, 0.8);
-  transform: rotate(0.5deg);
-}
-
-#logo img {
-  transform: rotate(-0.5deg);
+  padding: 15px;
+  background: #d12b29;
+  box-shadow: inset 1px 1px 4px rgba(30,30,30,0.1),  0px 0px 4.0px rgba(255,255,255,0.10);
+  border-radius: 50%;
 }
 
 footer {
@@ -242,11 +249,15 @@ h3 {
 
 @media (min-width: 768px) {
 
+  .jumbotron {
+    text-align:left;
+  }
+
   .jumbotron h1 {
     font-size:48px;
   }
 
-  .jumbotron .btn {
+  #jumbotron-icons-box {
     margin-top: 0px;
   }
 
@@ -315,11 +326,14 @@ h3 {
 
 .member-social-links .icon-replace {
   background: transparent url('') center 0px no-repeat;
+  opacity:1;
+  transition: opacity 0.5s;
 }
 
 .member-social-links a.icon-replace:hover {
-  background-position: center -200px;
+  opacity:0.8;
 }
+
 .member-social-links span.icon-replace {
   background-position: center -100px;
 }
@@ -345,11 +359,10 @@ h3 {
 
 #upcoming-events-list li {
   margin:5px 0;
-  border-top:2px solid #ffd42a;
+  border-top:2px solid #ee2d24;
   background: #f2f2f2;
   padding:15px 10px;
   overflow:visible;
-  border-radius:3px;
 }
 
 #upcoming-events-list li:before{
@@ -366,10 +379,10 @@ h3 {
 #upcoming-events-list .event-date {
   float: right;
   width: 65px;
-  background: #ffd42a url('../media/noise-texture.png');  /* In case broser doesn't understand multiple backgrounds */
-  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  background: #ee2d24 url('../media/noise-texture.png');  /* In case broser doesn't understand multiple backgrounds */
+  background: url('../media/noise-texture.png'), linear-gradient(to top right, #d12b29 0%, #ee2d24 100%);
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
-  color: black;
+  color: white;
   border-radius:3px;
   padding: 8px 0;
   text-align: center;
@@ -413,10 +426,12 @@ h3 {
   width:56px;
   margin:0px 20px 24px 0px;
   background: transparent url('')  center top  no-repeat;
+  opacity: 1.0;
+  transition: opacity 0.5s;
 }
 
 #joinform .icon-replace:hover {
-  background-position: center -200px;
+  opacity: 0.8;
 }
 
 #joinform .icon-mail-48 {
@@ -443,13 +458,14 @@ h3 {
 }
 
 #joinform .mail {
-  background: #ffd42a;
-  border:1px solid #ff0066;
+  background: #e6e6e6;
+  border:2px solid #ee2d24;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  transition: background 0.5s;
 }
 
-#joinform .mail:hover {
+#joinform .mail:hover, #joinform .mail:focus {
   background: #fce94f;
 }
 
@@ -459,10 +475,10 @@ h3 {
 }
 
 #joinform .send {
-  background: #ff0066;
+  background: #ee2d24;
   color:white;
   font-weight:bold;
-  border:1px solid #ff0066;
+  border:2px solid #ee2d24;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left:0;
@@ -480,20 +496,14 @@ a:hover, a:active, a:focus {
 }
 
 .btn-primary {
-  background: #ff0066;
-  border-color: #ff0066;
+  background:  #ee2d24;
+  border-color:  #ee2d24;
 }
 
 .btn-primary:hover,  .btn-primary:active, .btn-primary:focus {
-  background: #e4005b; /* 10% darker */
-  border-color: #e4005b;
+  background: #d12b29; /* 10% darker */
+  border-color:#d12b29;
 }
-
-.btn-primary:active{
-  position:relative;
-  top:1px;  /* Simulate pressed status */
-}
-
 
 .main-content ul {
   list-style: none;
@@ -503,7 +513,7 @@ a:hover, a:active, a:focus {
     content: "\25A0";
     font-size: 125%;
     line-height: 80%; /* smaller to keep the original line-height*/
-    color: #ffd42a;
+    color: #ee2d24;
     display: inline-block;
     width: 1.2em;
     margin-left: -1.2em;
@@ -516,8 +526,8 @@ a:hover, a:active, a:focus {
 
 .img-circle {
   padding:5px;
-  background:#ffd42a url('../media/noise-texture.png');
-  background: url('../media/noise-texture.png'), linear-gradient(to top right, #ffc12a 0%, #ffd42a 100%);
+  background:#ee2d24 url('../media/noise-texture.png');
+  background: url('../media/noise-texture.png'), linear-gradient(to top right,  #d12b29 0%, #ee2d24 100%);
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
 }
 
