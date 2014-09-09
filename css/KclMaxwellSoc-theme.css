@@ -138,18 +138,33 @@ body {
   margin: 0px 0px 64px 0px;
 }
 
+#jumbotron-icons-box {
+  display:inline-block;
+  background: white;
+  background: rgba(255, 255, 255, 0.3);
+  border:2px solid white;
+  margin-top:64px; /* To be removed on sd display */
+  border-radius: 4px;
+  padding-right:12px;
+}
+
 .jumbotron .btn {
   font-weight:bold;
-  margin-right:12px;
-  margin-top:64px; /* To be removed on sd display */
+  margin:-2px 12px -2px -2px;
+  border:2px solid white;
+  border-radius: 4px;
+}
+
+.jumbotron .btn:hover {
+  border:2px solid white;
 }
 
 .jumbotron-social-links a{
   display:inline-block;
   height:24px;
   width:40px;
-  margin:12px 0px 0px 15px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
-  vertical-align:bottom;
+  margin:6px 0px 6px 12px; /* top mergin: in case of very small screen in which icon are arranged in two rows */
+  vertical-align: middle;
 }
 
 .icon-replace span{
@@ -236,7 +251,7 @@ h3 {
     font-size:48px;
   }
 
-  .jumbotron .btn {
+  #jumbotron-icons-box {
     margin-top: 0px;
   }
 
@@ -470,20 +485,14 @@ a:hover, a:active, a:focus {
 }
 
 .btn-primary {
-  background: #ff0066;
-  border-color: #ff0066;
+  background:  #ee2d24;
+  border-color:  #ee2d24;
 }
 
 .btn-primary:hover,  .btn-primary:active, .btn-primary:focus {
-  background: #e4005b; /* 10% darker */
-  border-color: #e4005b;
+  background: #d12b29; /* 10% darker */
+  border-color:#d12b29;
 }
-
-.btn-primary:active{
-  position:relative;
-  top:1px;  /* Simulate pressed status */
-}
-
 
 .main-content ul {
   list-style: none;
