@@ -176,6 +176,13 @@ body {
   background-image: url('../media/icons/twitter-24.png');
 }
 
+#logo {
+  padding: 15px;
+  background: #d12b29;
+  box-shadow: inset 1px 1px 4px rgba(30,30,30,0.1),  0px 0px 4.0px rgba(255,255,255,0.10);
+  border-radius: 50%;
+}
+
 footer {
   margin-top:48px;
   padding: 64px 0px;
