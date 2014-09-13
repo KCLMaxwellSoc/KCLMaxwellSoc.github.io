@@ -203,9 +203,49 @@ body {
 }
 
 footer {
-  margin-top:48px;
+  color: white;
+  background: #6c5353;
+  margin-top: 48px;
   padding: 64px 0px;
-  background:#6c5353;
+}
+
+footer .col-sm-6 {
+  border-right: 1px solid #888;
+}
+
+
+footer .title {
+  font-size: 133%;
+  font-variant: small-caps;
+  border-bottom: 1px solid #888;
+  max-width: 66%;
+  margin-bottom: 24px;
+  padding-bottom:2px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color:white;
+}
+
+footer .icon-add {
+  background: url('') left -97px no-repeat;
+  padding-left: 40px;
+}
+
+footer .icon-mail-18 {
+  background-image: url('../media/icons/mail-18.png');
+}
+
+footer .icon-facebook-18 {
+  background-image: url('../media/icons/facebook-18.png');
+}
+
+footer .icon-twitter-18 {
+  background-image: url('../media/icons/twitter-18.png');
 }
 
 .section:before {
