@@ -32,3 +32,6 @@ $(function() {
 
 $('input').placeholder();
 
+/* Initialize bootstrap tooltip plugin */
+$("[data-toggle=tooltip]").tooltip();
+

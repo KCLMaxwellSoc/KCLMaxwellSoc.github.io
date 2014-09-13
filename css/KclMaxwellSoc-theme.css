@@ -592,6 +592,16 @@ a:hover, a:active, a:focus {
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
 }
 
+/* restyle bootstrap tooltips */
+.tooltip.bottom {
+  font-size: 18px;
+}
+
+.tooltip-inner {
+  max-width: none;
+  padding: 12px 12px;
+}
+
 ::selection {
   background: #ffd42a;
 }
