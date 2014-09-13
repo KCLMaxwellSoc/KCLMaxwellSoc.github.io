@@ -520,13 +520,30 @@ h3 {
   background: #e4005b;
 }
 
-#joinform label {
+/* Only hide labels if js is disabled, in case the placeholder attribute is not
+ * supported
+ */
+.js #joinform label {
   /* hides label preserving accessibility
-     https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+   * https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
   */
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.no-js #joinform label {
+  display:inline;
+}
+
+.no-js #joinform label:after {
+    content: ' \A';
+    white-space: pre;
+}
+
+.no-js #joinform label:before {
+    content: ' \A \A';
+    white-space: pre;
 }
 
 a {
