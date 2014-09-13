@@ -129,7 +129,7 @@ body {
   background: url('../media/noise-texture.png'), linear-gradient(to top right, #d12b29 0%, #ee2d24 100%);
 
   padding:64px 0px;
-  margin:65px 15px 15px 15px;
+  margin:65px 15px 64px 15px;
   border-radius:3px;
   box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
   text-align: center; /* To be overwritten on sd display */
