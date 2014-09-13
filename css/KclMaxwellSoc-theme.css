@@ -486,6 +486,8 @@ h3 {
   margin: 18px 0px 0px 0px; /* 18 = 32 -24 (the paragraph bottom margin); */
   transition-property: box-shadow, background;
   transition-duration: 0.5s;
+  box-shadow: none; /* remove firefox required field style*/
+  outline: none; /* remove chrome focused style */
 }
 
 #joinform .mail, #joinform .name {
