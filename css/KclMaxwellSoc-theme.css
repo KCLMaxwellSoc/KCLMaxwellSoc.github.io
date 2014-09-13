@@ -412,6 +412,11 @@ h3 {
 #upcoming-events-list p {
   margin-bottom: 10px;
 }
+
+#upcoming-events-list li > p {
+  padding: 6px 0px;
+}
+
 #upcoming-events-list .event-title {
   font-size:125%;
 }
@@ -428,8 +433,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  margin-right:5px;
-  margin-top:-27px;
+  margin:-33px 5px 5px 5px;
 }
 
 #upcoming-events-list .event-date span {
