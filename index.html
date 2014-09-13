@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'')+' js'})(document.documentElement)</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,9 +51,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#joinus">Join Us</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#committee">Committee</a></li>
-            <li><a href="#joinus">Join Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -69,7 +70,7 @@
         <div id="jumbotron-icons-box">
           <a class="btn btn-primary btn-lg" href="#joinus">Join Us</a>
           <span class="jumbotron-social-links">
-            <a href="mailto:" class="icon-replace icon-mail-24"><span>user@mail.com</span></a>
+            <a href="mailto:" class="icon-replace icon-mail-24"><span>contact@kclmaxwell.com</span></a>
             <a href="https://www.facebook.com/MaxwellSociety" class="icon-replace icon-facebook-24"><span>facebook/MaxwellSociety</span></a>
             <a href="https://twitter.com/MaxwellSociety" class="icon-replace icon-twitter-24"><span>@MaxwellSociety</span></a>
           </span>
@@ -83,13 +84,13 @@
             <h3><span class="glyphicon glyphicon-question-sign"></span>Who are we?</h3>
             <p>
               The Maxwell society is the Physics department's student society.
-              Discover the current <a href="#committee"> current committee</a>.
+              Discover the <a href="#committee"> current committee</a>.
             </p>
         </div>
         <div class="col-sm-4 claim-2">
             <h3><span class="glyphicon glyphicon-info-sign"></span>What do we do?</h3>
             <p>
-              We hold a weekly lecture series with physisists from around thecountry
+              We hold a weekly lecture series with physicists from around the country
               and host a wide variety of social <a href="#events">events</a>. We
               also publish a monthly newsletter to keep you informed of what is
               going on.
@@ -98,8 +99,8 @@
         <div class="col-sm-4 claim-3">
             <h3><span class="glyphicon glyphicon-user"></span>How to join?</h3>
             <p>
-              All King's students are entitled to be members of the Society, and
-              pay an annual membership fee of £5. <a href="#joinus">Join now</a>!
+              All King's students are entitled to be members of the Society by
+              paying an annual membership fee of £5. <a href="#joinus">Join now</a>!
             </p>
         </div>
       </div>
@@ -109,24 +110,49 @@
 
       <div class="row section">
         <div class="col-sm-8">
+          <h2 id="joinus">Join us</h2>
+          <p>By giving us your email we can send you our newsletters and a link to pay 
+          through KCLSU. Please also follow us on <a href="https://twitter.com/MaxwellSociety">Twitter</a>
+          and <a href="https://www.facebook.com/MaxwellSociety">Facebook</a>.</p>
+          <form id="joinform" class="clearfix" action="https://docs.google.com/forms/d/1aWfYZXvm23IwIu2Hs5gfCnSI4i4WcdmYchNvzlla97U/formResponse" method="POST">
+              <label for="name">Your Name: </label>
+              <input type="text" placeholder="your name" id="name" name="entry.390404300" class="name" />
+              <label for="name">Your email address: </label>
+              <input type="text" placeholder="your email" id="email" name="entry.789459855" class="mail" />
+              <label for="submit-button">Submit the form: </label>
+              <input type="submit" id="submit-button"value="Join us" class="send" />
+          </form>
+          <div id="main-contacts">
+            <p>
+              <a href="mailto:contact@kclmaxwell.com" class="icon-add icon-mail-48">contact@kclmaxwell.com</a>
+            </p>
+            <p>
+              <a href="https://twitter.com/MaxwellSociety" class="icon-add icon-twitter-48">@MaxwellSociety</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/MaxwellSociety" class="icon-add icon-facebook-48">facebook.com/MaxwellSociety</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-sm-8">
           <h2 id="events">Events</h2>
           <p>Regular Maxwell Society events are:</p>
 
           <ul>
-            <li>The Monday Seminar Series: Seminars on a range of science topics
-                are given by speakers invited from other institutions and also from 
-                the King's Physics Department. A list of upcoming events can be found here.
+            <li>The Monday Seminar Series: A lecture series on a range of science
+                topics are given by speakers invited from around the country as well
+                as the King's Physics Department. A list of upcoming events can be
+                found <a href="./downloads/maxwell lecture schedule 2014-15.pdf">here</a>.
             </li>
 
             <li>The Cumberland Lodge Weekend: This residential weekend takes place
-                near the end of February and is organised around a theme. The theme
-                for 2012 was be The History of Physics at King’s.
+                near the end of February and is organised around a theme. This is
+                a great opportunity to relax with friends and get to know the faculty better.
             </li>
 
-            <li>Social Events: A number of events are planned every year. There is
-                typically a start of year party, an end of year party such as a boat
-                trip and much in between. Suggestions for events are welcome.
-            </li>
           </ul>
         <h3>Upcoming Events</h3>
 
@@ -134,18 +160,30 @@
 
           <li>
             <p>
-              <span class="event-date"><span class="month">SEP</span> <span class="day">24</span> <span class="year">2014</span></span>
-              <span class="event-title">Freshers welcome party.</span>
+              <span class="event-date"><span class="month">SEP</span> <span class="day">16</span> <span class="year">2014</span></span>
+              <span class="event-title">Fresher's welcome drinks</span>
             </p>
-            <p>event descriptions</p>
+            <p>After your induction day you deserve a chance to relax with your new
+            classmates. We will be waiting in the Physics department at the end of
+            the day to take you out. </p>
           </li>
 
           <li>
             <p>
-              <span class="event-date"><span class="month">SEP</span> <span class="day">24</span> <span class="year">2014</span></span>
-              <span class="event-title">Get ready for next year.</span>
+              <span class="event-date"><span class="month">SEP</span> <span class="day">22</span> <span class="year">2014</span></span>
+              <span class="event-title">Come sign up!</span>
             </p>
-            <p>event descriptions</p>
+            <p>We will be in room S7.06 from 12:00 until 4:00 on Monday and Tuesday
+            taking sub payments of £5. We will bring some beers so come along and stop
+            for a chat.</p>
+          </li>
+          
+          <li>
+            <p>
+              <span class="event-date"><span class="month">OCT</span> <span class="day">&nbsp;</span> <span class="year">2014</span></span>
+              <span class="event-title">KCL vs UCL Physics football</span>
+            </p>
+            <p>Occasionally Titans collide.</p>
           </li>
 
         </ul>
@@ -160,9 +198,9 @@
       <div class="row section">
         <div class="col-sm-8">
           <h2 id="committee">Committee</h2>
-          <p>The Maxwell Society Committee consists of a president, secretary, treasurer
-            and several committee members, all chosen from the student body. Elections
-            are held at the end of the academic year.
+          <p>The Maxwell committee is decided at the AGM held towards the end of the year.
+          Any member of the department is able to run for any position and a vote decides 
+          who wins contested roles. 
           </p>
         </div>
       </div>
@@ -170,34 +208,34 @@
       <div class="row">
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Neil Armstrong</p>
+          <p class="member-name">Thomas Acton</p>
           <p><span class="member-role">President</span></p>
         <p class="member-social-links">
-          <a href="mailto:" class="icon-replace icon-mail-18"><span>user@mail.com</span></a>
-          <a href="" class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></a>
+          <a href="mailto:thomas.acton@kcl.ac.uk.com" class="icon-replace icon-mail-18"><span>thomas.acton@kcl.ac.uk.com</span></a>
+          <span class="icon-replace icon-facebook-18"><span></span></span>
           <span class="icon-replace icon-twitter-18"><span></span></span>
         </p>
         </div>
 
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Buzz Aldrin</p>
-          <p><span class="member-role">Secretary</span></p>
+          <p class="member-name">Thomas Seagrave</p>
+          <p><span class="member-role">Tresurer</span></p>
         <p class="member-social-links">
-          <a href="mailto:" class="icon-replace icon-mail-18"><span>user@mail.com</span></a>
-          <span class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></span>
-          <a href="" class="icon-replace icon-twitter-18"><span></span></a>
+          <a href="mailto:thomas@seagrave@kcl.ac.uk" class="icon-replace icon-mail-18"><span>thomas@seagrave@kcl.ac.uk</span></a>
+          <span class="icon-replace icon-facebook-18"><span></span></span>
+          <span href="" class="icon-replace icon-twitter-18"><span></span></span>
         </p>
         </div>
 
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Michael Collins</p>
-          <p><span class="member-role">Tresurer</span></p>
+          <p class="member-name">Felix Veale</p>
+          <p><span class="member-role">Secretary</span></p>
           <p class="member-social-links">
-            <span class="icon-replace icon-mail-18"><span>user@mail.com</span></span>
-            <span class="icon-replace icon-facebook-18"><span>facebook/MaxwellSociety</span></span>
-            <a href="" class="icon-replace icon-twitter-18"><span></span></a>
+          <a href="mailto:felix.veale@kcl.ac.uk" class="icon-replace icon-mail-18"><span>felix.veale@kcl.ac.uk</span></a>
+          <span class="icon-replace icon-facebook-18"><span></span></span>
+          <span class="icon-replace icon-twitter-18"><span></span></span>
           </p>
         </div>
       </div>
@@ -205,10 +243,10 @@
       <div class="row">
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Charles Conrad</p>
-          <p><span class="member-role">Member</span></p>
+          <p class="member-name">Yaz Kinebas</p>
+          <p><span class="member-role">Media</span></p>
           <p class="member-social-links">
-            <span class="icon-replace icon-mail-18"><span></span></span>
+            <a href="mailto:yaz.kinebas@kcl.ac.uk" class="icon-replace icon-mail-18"><span>yaz.kinebas@kcl.ac.uk</span></a>
             <span class="icon-replace icon-facebook-18"><span></span></span>
             <span class="icon-replace icon-twitter-18"><span></span></span>
           </p>
@@ -216,10 +254,10 @@
 
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Richard Gordon</p>
-          <p><span class="member-role">Member</span></p>
+          <p class="member-name">Edoardo Simone Paluan</p>
+          <p><span class="member-role">Technology</span></p>
           <p class="member-social-links">
-            <span class="icon-replace icon-mail-18"><span></span></span>
+            <a href="mailto:edoardo.paluan@kcl.ac.uk" class="icon-replace icon-mail-18"><span>edoardo.paluan@kcl.ac.uk</span></a>
             <span class="icon-replace icon-facebook-18"><span></span></span>
             <span class="icon-replace icon-twitter-18"><span></span></span>
           </p>
@@ -227,30 +265,16 @@
 
         <div class="col-sm-4 committee-member">
           <img class="img-responsive center-block img-circle" src="http://placehold.it/160x160" alt="" />
-          <p class="member-name">Alan Bean</p>
-          <p><span class="member-role">Member</span></p>
+          <p class="member-name">Luke Nicholls</p>
+          <p><span class="member-role">Postgrad</span></p>
           <p class="member-social-links">
-            <span class="icon-replace icon-mail-18"><span></span></span>
+            <a href="mailto:luke.nicholls@kcl.ac.uk" class="icon-replace icon-mail-18"><span>luke.nicholls@kcl.ac.uk</span></a>
             <span class="icon-replace icon-facebook-18"><span></span></span>
             <span class="icon-replace icon-twitter-18"><span></span></span>
           </p>
         </div>
       </div>
 
-      <div class="row section">
-        <div class="col-sm-8">
-          <h2 id="joinus">Join us</h2>
-          <p>Insert your mail to join us or get in touch ...</p>
-          <form id="joinform">
-            <input type="text" placeholder="your mail" class="mail" />
-            <input type="submit" value="Join Us" class="send" />
-            <a href="" class="icon-replace icon-mail-48"><span>info@mail.domain.tld</span></a>
-            <a href="" class="icon-replace icon-facebook-48"><span></span></a>
-            <a href="" class="icon-replace icon-twitter-48"><span></span></a>
-          </form>
-
-        </div>
-      </div>
     </div><!-- /.container-fluid -->
 
     <footer>
@@ -263,6 +287,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

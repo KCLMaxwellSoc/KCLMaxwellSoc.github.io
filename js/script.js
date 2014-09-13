@@ -26,3 +26,9 @@ $(function() {
 });
 
 
+/* Placeholder support for old browsers, as the labels are hidden and there
+ * would be no way to know what to input fields are
+*/
+
+$('input').placeholder();
+
