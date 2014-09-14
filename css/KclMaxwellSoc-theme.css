@@ -601,7 +601,12 @@ a:hover, a:active, a:focus {
   font-size: 18px;
 }
 
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color: #6c5353;
+}
+
 .tooltip-inner {
+  background: #6c5353;
   max-width: none;
   padding: 12px 12px;
 }
