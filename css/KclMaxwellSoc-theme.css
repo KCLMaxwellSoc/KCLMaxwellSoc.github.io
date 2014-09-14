@@ -129,7 +129,7 @@ body {
   background: url('../media/noise-texture.png'), linear-gradient(to top right, #d12b29 0%, #ee2d24 100%);
 
   padding:64px 0px;
-  margin:65px 15px 15px 15px;
+  margin:65px 15px 64px 15px;
   border-radius:3px;
   box-shadow:  inset 0px -10px 10px -10px rgba(255, 102, 0, 0.33);
   text-align: center; /* To be overwritten on sd display */
@@ -203,9 +203,49 @@ body {
 }
 
 footer {
-  margin-top:48px;
+  color: white;
+  background: #6c5353;
+  margin-top: 48px;
   padding: 64px 0px;
-  background:#6c5353;
+}
+
+footer .col-sm-6 {
+  border-right: 1px solid #888;
+}
+
+
+footer .title {
+  font-size: 133%;
+  font-variant: small-caps;
+  border-bottom: 1px solid #888;
+  max-width: 66%;
+  margin-bottom: 24px;
+  padding-bottom:2px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color:white;
+}
+
+footer .icon-add {
+  background: url('') left -97px no-repeat;
+  padding-left: 40px;
+}
+
+footer .icon-mail-18 {
+  background-image: url('../media/icons/mail-18.png');
+}
+
+footer .icon-facebook-18 {
+  background-image: url('../media/icons/facebook-18.png');
+}
+
+footer .icon-twitter-18 {
+  background-image: url('../media/icons/twitter-18.png');
 }
 
 .section:before {
@@ -372,6 +412,11 @@ h3 {
 #upcoming-events-list p {
   margin-bottom: 10px;
 }
+
+#upcoming-events-list li > p {
+  padding: 6px 0px;
+}
+
 #upcoming-events-list .event-title {
   font-size:125%;
 }
@@ -388,8 +433,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  margin-right:5px;
-  margin-top:-27px;
+  margin:-33px 5px 5px 5px;
 }
 
 #upcoming-events-list .event-date span {
@@ -446,6 +490,8 @@ h3 {
   margin: 18px 0px 0px 0px; /* 18 = 32 -24 (the paragraph bottom margin); */
   transition-property: box-shadow, background;
   transition-duration: 0.5s;
+  box-shadow: none; /* remove firefox required field style*/
+  outline: none; /* remove chrome focused style */
 }
 
 #joinform .mail, #joinform .name {
@@ -548,6 +594,21 @@ a:hover, a:active, a:focus {
   background:#ee2d24 url('../media/noise-texture.png');
   background: url('../media/noise-texture.png'), linear-gradient(to top right,  #d12b29 0%, #ee2d24 100%);
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
+}
+
+/* restyle bootstrap tooltips */
+.tooltip.bottom {
+  font-size: 18px;
+}
+
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color: #6c5353;
+}
+
+.tooltip-inner {
+  background: #6c5353;
+  max-width: none;
+  padding: 12px 12px;
 }
 
 ::selection {
