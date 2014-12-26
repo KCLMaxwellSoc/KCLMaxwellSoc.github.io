@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'')+' js'})(document.documentElement)</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Light Fantastic - Cumberland Lodge Weekend - KCL Maxwell Society</title>
+    <meta name="description" content="Light Fantastic - Cumberland Lodge Weekend TODO">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom theme -->
+    <link href="css/KclMaxwellSoc-theme.css" rel="stylesheet">
+    <style type="text/css">
+        /* Custom stylesheet for this page*/
+        .light-fantastic {
+            position: relative;
+            margin: 65px 15px 0px 15px;
+            font-size: 18px;
+        }
+
+        .light-fantastic p, 
+        .light-fantastic h1,
+        .light-fantastic h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .light-fantastic h1 {
+            font-size: 250%;
+            padding-top: 0.8em;
+            padding-bottom: 0.2em;
+            font-style: italic;
+        }
+
+        .light-fantastic h2 {
+            font-size: 150%;
+        }
+
+        .light-fantastic .background {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .light-fantastic .clodge-event {
+             padding: 32px 0px 0px 0px;
+        }
+
+        .light-fantastic .clodge-event-date {
+            line-height: 1.8; /* to vertically center the signup button */
+        }
+
+        .light-fantastic .btn {
+          display: none; /* hidden on small screnn, sign up sectoin is just below  */
+          font-weight: bold;
+          margin    : 10px 0px 0px 15px;
+          border: 2px solid white;
+          float: right;
+        }
+
+        /* Tempraray disable form */
+        #joinform {
+            opacity: 0.5;
+            box-shadow: none;
+            margin-bottom:16px;
+        }
+
+        #joinform input, #joinform input:hover {
+            box-shadow: none;
+        }
+
+
+        @media (min-width: 480px) {
+          .light-fantastic .container-fluid {
+            padding-top: 64px;
+            position: absolute;
+            /* this makes it centered (maintaineing it's original max width) although absolute positioned*/
+            top: 0; bottom: 0; left: 0; right: 0;
+          }
+
+          .light-fantastic .clodge-event {
+                 overflow: hidden;
+                 background: white ; /* in case tule below is ignored by old browsers */
+                 border-radius: 4px;
+                 background: rgba(255, 255, 255, 0.5);
+                 padding: 32px 15px 15px 15px;
+          }
+
+          .light-fantastic .btn {
+            display: block; /* Show the button hidden on small screens*/
+          }
+        }
+
+        @media (min-width: 768px) {
+
+          .light-fantastic {
+            font-size:32px;
+          }
+          .light-fantastic .clodge-event {
+            margin-left:15px;
+          }
+
+          .light-fantastic h1 {
+              font-size: 225%;
+          }
+        }
+
+        /* event schedule style */
+
+        .schedule {
+          width:100%;
+          margin-bottom: 32px;
+        }
+
+        .schedule td {
+          vertical-align:top;
+        }
+
+        .schedule td {
+          padding: 5px;
+        }
+
+        .schedule .session tr{
+          background: #eee;
+        }
+
+        .schedule tbody.session tr:first-child td+td{
+          font-variant: small-caps;
+          text-align: center;
+        }
+/*
+        .schedule tbody tr:first-child td{
+          padding-top: 16px;
+        }*/
+        .schedule tbody.session::before {
+          content: '';
+          display: block;
+          height: 16px;
+        }
+
+        .schedule td:first-child{
+            min-width: 15%;
+        }
+
+        .schedule .session tr+tr td {
+          padding: 15px 5px;
+        }
+
+        .schedule .image img {
+          display: block;
+          width: 100%;
+          margin: 16px 0px;
+        }
+
+        .schedule em, .schedule strong {
+          display: block;
+        }
+
+        .note {
+          font-size: 90%;
+          font-style: italic;
+        }
+
+        .note a {
+          background: #ff0066;
+          color: white;
+          border-radius: 4px;
+          padding: 0px;
+          width: 21px;
+          height: 21px;
+          display: inline-block;
+          vertical-align:center;
+          text-align:center;
+          margin-right: 0.5em;
+        }
+
+        #program h3 {
+          font-weight: bold;
+          text-align:center;
+          margin: 0.7em 0 0.3em 0;
+        }
+
+        #program h3::after {
+          content: '';
+          width:30%;
+          border-bottom:1px solid black;
+          display:block;
+          margin: 0 auto;
+        }
+
+        /* Carousel */
+
+        .carousel {
+          background: transparent;
+          margin-top: 64px;
+        }
+
+        @media (min-width: 768px) {
+          .carousel {
+            padding:30px;
+          }
+        }
+
+        .carousel-indicators{
+          bottom: 50px;
+        }
+
+        .carousel img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+    </style>
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44923126-2', 'auto');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-offset="100" data-target=".navbar-collapse">
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./#home" id="home">KCL Maxwell Society</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./#aboutus">About Us</a></li>
+            <li><a href="./#joinus">Join Us</a></li>
+            <li><a href="./#events">Events</a></li>
+            <li><a href="./#committee">Committee</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="light-fantastic">
+      <img src="./media/Clodge.jpg" class="background" /> 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 clodge-event">
+            <p class="">The Maxwell Society</p>
+            <h2>Cumberland Lodge Weekend</h2>
+            <h1>Light Fantastic</h1>
+            <p class="clodge-event-date">27<sup>th</sup> February - 1<sup>st</sup> March 2015  <a class="btn btn-primary btn-lg" href="#signup">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid main-content">
+
+      <div class="row section">
+        <div class="col-sm-8">
+          <h2 id="signup">Sign up for the Cumberland Lodge Weekend!</h2>
+          <p>Speces are limited so sign up quick; we will allocate on a first come first served basis.</p>
+          <p>Tickets cost £80 for Maxwell society members. This includes transport, accomodation and meals. The program of the weekend can be found <a href="#program">below</a> (A PDF brochure can be downloaded <a href="./downloads/CumberlandLodge2015.pdf">here</a>).
+<p style="align:center"> * * * SIGN UP FORM COMING SOON * * *</p>
+          <form id="joinform" class="clearfix" action="" method="POST">
+              <label for="name">Your Name: </label>
+              <input disabled  type="text" placeholder="your name" id="name" name="" class="name" required/>
+              <label for="name">Your email address: </label>
+              <input disabled  type="email" placeholder="your email" id="email" name="" class="mail" required/>
+              <label for="submit-button">Sign up: </label>
+              <input disabled type="submit" id="submit-button" value="Sign up" class="send" />
+          </form>
+          <p>For more information please <a href="#contactus">contact us</a>.</p>
+        </div>
+
+        <div id="carousel-example-generic" class="carousel slide col-sm-4" data-ride="carousel" data-interval="3000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./media/carousel/c1.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="./media/carousel/c3.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="./media/carousel/c2.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="./media/carousel/c4.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="./media/carousel/c6.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row section">
+        <h2  class="col-sm-8">Program for the Maxwell Society Weekend at Cumberland Lodge, <br />
+27 February - 1 March 2015</h2>
+      </div>
+      <div class="row" id="program">
+        <div class="col-sm-4">
+          <h3>Friday, 27 February</h3>
+          <table class="schedule">
+
+            <tbody class="time">
+              <tr>
+                <td>18:00</td>
+                <td>Arrival</td>
+              </tr>
+              <tr>
+                <td>18:30</td>
+                <td>Bar or informal reception</td>
+              </tr>
+              <tr>
+                <td>19:15</td>
+                <td>Dinner</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>20:15</td>
+                <td>Welcome and introductory information</td>
+              </tr>
+              <tr>
+                <td colspan="2"><em>Riccardo Sapienza and Thomas Acton</em></td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>20:30</td>
+                <td>Session 1</td>
+              </tr>
+              <tr>
+                <td colspan="2"><em>Silvia Vignolini (Cambridge University)</em> <strong>Bio-inspired photonic materials, from
+  nature to applications</strong></td>
+              </tr>
+
+            </tbody>
+            <tbody class="time">
+              <tr>
+                <td>22:00</td>
+                <td>Bar (Open until 24.00 at the latest)</td>
+              </tr>
+            </tbody>
+
+            <tbody class="image">
+            <tr><td colspan="2"><img class="bottom" src="./media/clodge1.jpg"/></td></tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="col-sm-4">
+          <h3>Saturday, 28 February</h3>
+          <table class="schedule">
+
+            <tbody class="time">
+              <tr>
+                <td>08:15</td>
+                <td>Breakfast</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>09:00</td>
+                <td>Session 2</td>
+              </tr>
+              <tr>
+                <td colspan="2"><em>Stefan Rotter (TU-Vienna)</em>
+<strong>Dressage riding with waves</strong></td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>10:30</td>
+                <td>Coffee</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>11:00</td>
+                <td>Session 3</td>
+              </tr>
+              <tr><td colspan="2">
+                <em>Sylvain Gigan (Laboratoire Kastler-Brossel, ENS)</em> <strong>Peeking behind the shower curtain: wavefront
+shaping and imaging in complex media</strong></td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>13:00</td>
+                <td>Lunch</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>Free afternoon</td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td>Tea</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>16:30</td>
+                <td>Session 4</td>
+              </tr>
+              <tr><td colspan="2">
+                <em>Riccardo Sapienza (King’s College London)</em> <strong>Lasers of dusts and silk</strong></td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>18:00</td>
+                <td>Bar</td>
+              </tr>
+              <tr>
+                <td>19:15</td>
+                <td>Dinner</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>20:30</td>
+                <td>Session 5</td>
+              </tr>
+              <tr><td colspan="2">
+                <em>Ruth Oulton (Bristol University)</em> <strong>Quantum light - both &ldquo;here&rdquo; and &ldquo;there&rdquo; in
+nano-land</strong></td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>22:00</td>
+                <td>Pub Quiz</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="col-sm-4">
+          <h3>Sunday, 1 March</h3>
+          <table class="schedule">
+
+            <tbody class="time">
+              <tr>
+                <td>09:00</td>
+                <td>Breakfast (until 09:45)</td>
+              </tr>
+              <tr>
+                <td>10:25</td>
+                <td>Departure of those attending
+Matins at Royal Chapel</td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Coffee</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>11:00</td>
+                <td>Session 6 - No session (See note <a id="note1_ref" href="#note1">1</a>)</td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>13:00</td>
+                <td>Lunch</td>
+              </tr>
+            </tbody>
+
+            <tbody class="session">
+              <tr>
+                <td>14:00</td>
+                <td>Session 7</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <em>Paolo Biagioni (Politecnico di Milano)</em> <strong>The smaller the better: light confinement
+beyond diffraction</strong></td>
+              </tr>
+            </tbody>
+
+            <tbody class="time">
+              <tr>
+                <td>15:30</td>
+                <td>Tea</td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td>Departure</td>
+              </tr>
+
+            </tbody>
+
+            <tbody class="image">
+            <tr><td colspan="2"><img class="bottom" src="./media/clodges.jpg"/></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <p class="note">Please note: <br/> <a id="note1" href="#note1_ref">1</a> On Sunday morning all members of the group are very
+          welcome to attend services at the Royal Chapel in the
+          grounds of nearby Royal Lodge. Holy Communion is at 08:30
+          (10:00 on the first Sunday of the month) and Matins at 11:00.</p>
+        </div>
+      </div>
+
+    </div><!-- /.container-fluid main-content -->
+
+    </div><!-- /.container-fluid -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="col-sm-6">
+          <a id="contactus"></a><p class="title">The Maxwell Society</p>
+          <p>Kings College London<br />
+             Strand, WC2R 2LS, London,  England, United Kingdom</p>
+          <p>Contacts:</p>
+          <p>
+            <a href="mailto:contact@kclmaxwell.com" class="icon-add icon-mail-18">contact@kclmaxwell.com</a>
+          </p>
+          <p>
+            <a href="https://twitter.com/MaxwellSociety" class="icon-add icon-twitter-18">@MaxwellSociety</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/KCLMaxwell" class="icon-add icon-facebook-18">facebook.com/KCLMaxwell</a>
+          </p>
+        </div>
+      </div><!-- /.container-fluid -->
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
