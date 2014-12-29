@@ -590,7 +590,7 @@ a:hover, a:active, a:focus {
 }
 
 .img-circle {
-  padding:5px;
+  border: 5px solid #ee2d24;
   background:#ee2d24 url('../media/noise-texture.png');
   background: url('../media/noise-texture.png'), linear-gradient(to top right,  #d12b29 0%, #ee2d24 100%);
   box-shadow: rgba(0,0,0,0.1) 2px 1px 6px 0px;
